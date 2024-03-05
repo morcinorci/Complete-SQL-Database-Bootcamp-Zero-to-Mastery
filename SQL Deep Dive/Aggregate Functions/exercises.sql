@@ -8,10 +8,13 @@
 
 -- Question 1: What is the average salary for the company?
 -- Table: Salaries
+SELECT avg(salary) 
+FROM Salaries;
 
 
 -- Question 2: What year was the youngest person born in the company?
 -- Table: employees
+SELECT max(birth_date) FROM employees;
 
 
 -- BEFORE YOU START
@@ -21,9 +24,10 @@
  */
 -- 
 
+
 -- Question 1: How many towns are there in france?
 -- Table: Towns
-
+SELECT count(id) from Towns
 
 -- BEFORE YOU START
 /*
@@ -34,6 +38,7 @@
 
 -- Question 1: How many official languages are there?
 -- Table: countrylanguage
+SELECT count(isofficial) from countrylanguage;
 
 -- Question 2: What is the average life expectancy in the world?
 -- Table: country
